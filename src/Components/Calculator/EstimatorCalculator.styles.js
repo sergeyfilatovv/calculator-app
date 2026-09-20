@@ -35,3 +35,4 @@ export const CalculatorFooter = styled.footer`
   flex-direction: column;
   gap: 16px;
 `;
+

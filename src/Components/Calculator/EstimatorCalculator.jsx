@@ -1,6 +1,7 @@
 import './style.css'
 import {Container} from '../../StyledComponents/Container/Container.styles'
 import * as S from './EstimatorCalculator.styles'
+import EstimatePDFButton from './EstimatePDFButton'
 
 import { useDispatch, useSelector } from 'react-redux';
 import {
@@ -371,6 +372,7 @@ function EstimatorCalculator() {
           <button type="button" className="btn" onClick={() => dispatch(resetEstimator())}>
             Сбросить
           </button>
+          <EstimatePDFButton/>
           <button type="button" className="btn btn-primary" onClick={() => alert('Заявка отправлена!')}>
             Отправить заявку
           </button>

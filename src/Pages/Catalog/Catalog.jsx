@@ -3,7 +3,7 @@ import {Container} from '../../StyledComponents/Container/Container.styles'
 import { useSelector, useDispatch } from 'react-redux';
 import { setActiveCategory } from '../../toolkitRedux/catalogSlice';
 import ProjectModal from '../../Components/ProjectModal/ProjectModal';
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 function Catalog() {
     const dispatch = useDispatch();
@@ -24,7 +24,7 @@ function Catalog() {
 
     return ( 
         <>
-             <Container>
+        <Container>
              <S.CatalogTitle>Каталог выполненных работ</S.CatalogTitle>
 
             <S.FilterGroup>
@@ -57,12 +57,12 @@ function Catalog() {
                 </S.Card>
                 ))}
             </S.Grid>
-        </Container>
-        <ProjectModal
-        project={selectedProject}
-        isOpen={!!selectedProject}
-        onClose={closeModal}
-      />
+            </Container>
+            <ProjectModal
+            project={selectedProject}
+            isOpen={!!selectedProject}
+            onClose={closeModal}
+            />
         </>
        
         
